@@ -5,6 +5,6 @@ public class RepostInfo {
     private boolean inGroup;
     private boolean inStories;
     private boolean inPrivateMessage;
-    private Textinfo text;
-
+    private String text;
+    private String attachmentUrl;
 }

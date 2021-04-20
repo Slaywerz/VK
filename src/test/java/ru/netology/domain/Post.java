@@ -4,7 +4,7 @@ public class Post {
     private int postID;
     private String date;
     private int ownerID;
-    private String imageURL;
+    private String attachmentUrl;
     private String text;
     private CommentsInfo commentsInfo;
     private LikeInfo likeInfo;
@@ -13,6 +13,7 @@ public class Post {
     private boolean deletePost;
     private boolean editPost;
     private ReportInfo reportInfo;
+    private boolean saveBookmark;
 
     public int getPostID() {
         return postID;
@@ -26,8 +27,8 @@ public class Post {
         return ownerID;
     }
 
-    public String getImageURL() {
-        return imageURL;
+    public String getAttachmentUrl() {
+        return attachmentUrl;
     }
 
     public String getText() {
@@ -40,6 +41,10 @@ public class Post {
 
     public CommentsInfo getCommentsInfo() {
         return commentsInfo;
+    }
+
+    public void setCommentsInfo(CommentsInfo commentsInfo) {
+        this.commentsInfo = commentsInfo;
     }
 
     public LikeInfo getLikeInfo() {
@@ -62,20 +67,8 @@ public class Post {
         return viewsCount;
     }
 
-    public void setViewsCount(int viewsCount) {
-        this.viewsCount = viewsCount;
-    }
-
-    public boolean isDeletePost() {
-        return deletePost;
-    }
-
     public void setDeletePost(boolean deletePost) {
         this.deletePost = deletePost;
-    }
-
-    public boolean isEditPost() {
-        return editPost;
     }
 
     public void setEditPost(boolean editPost) {
@@ -88,5 +81,13 @@ public class Post {
 
     public void setReportInfo(ReportInfo reportInfo) {
         this.reportInfo = reportInfo;
+    }
+
+    public boolean isSaveBookmark() {
+        return saveBookmark;
+    }
+
+    public void setSaveBookmark(boolean saveBookmark) {
+        this.saveBookmark = saveBookmark;
     }
 }

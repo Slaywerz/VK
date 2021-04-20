@@ -6,7 +6,7 @@ public class CommentsInfo {
     private boolean canPost;
     private String commentReply;
     private int commentReplyId;
-    private Textinfo textInfo;
+    private String text;
     private LikeInfo likeInfo;
     private ReportInfo reportInfo;
     private boolean deleteComment;
@@ -19,16 +19,8 @@ public class CommentsInfo {
         return count;
     }
 
-    public void setCount(int count) {
-        this.count = count;
-    }
-
     public int getCommentID() {
         return commentID;
-    }
-
-    public boolean isCanPost() {
-        return canPost;
     }
 
     public void setCanPost(boolean canPost) {
@@ -47,12 +39,12 @@ public class CommentsInfo {
         return commentReplyId;
     }
 
-    public Textinfo getTextInfo() {
-        return textInfo;
+    public String getText() {
+        return text;
     }
 
-    public void setTextInfo(Textinfo textInfo) {
-        this.textInfo = textInfo;
+    public void setText(String text) {
+        this.text = text;
     }
 
     public LikeInfo getLikeInfo() {
